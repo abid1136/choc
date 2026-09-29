@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@500;600;700&family=Lora:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- MUSIC TOGGLE -->
+  <button id="music-btn" class="music-btn" aria-label="Toggle music">
+    <span id="music-icon">♪</span>
+    <audio id="bg-music" loop src="assets/music.mp3"></audio>
+  </button>
+
+  <!-- FLOATING HEARTS CONTAINER -->
+  <div id="hearts-container" aria-hidden="true"></div>
+
+  <!-- ===================== SPLASH PAGE ===================== -->
+  <div id="page-splash" class="page splash-page active">
+    <div class="splash-stars" aria-hidden="true">
+      <span class="ss s1">✦</span><span class="ss s2">✧</span>
+      <span class="ss s3">✦</span><span class="ss s4">✧</span>
+      <span class="ss s5">✦</span><span class="ss s6">✧</span>
+    </div>
+    <div class="splash-inner">
+      <p class="splash-for">— for you —</p>
+      <img
+        src="assets/mochi/mochi-wave.gif"
+        alt="Mochi Cat waving"
+        class="splash-mochi"
+        id="splash-mochi"
+      />
+      <h1 class="splash-title">Kuch lafz tumhare liye...</h1>
+      <p class="splash-sub">I wrote all of this for you.<br/>Every single word. 🥺</p>
+      <button class="begin-btn" id="begin-btn">Begin ❤️</button>
+    </div>
+  </div>
+
+  <!-- ===================== SHAYARI PAGES ===================== -->
+  <div id="pages-wrapper" class="pages-wrapper hidden">
+
+    <!-- Page counter top center -->
+    <div class="page-counter" id="page-counter">1 / 17</div>
+
+    <!-- Page 1 — Tum Chaand Si Haseen (blushing/cutie) -->
+    <div class="spage light-page active" id="sp-1">
+      <div class="sp-deco top-deco" aria-hidden="true">✿ ❀ ✿</div>
+      <div class="sp-content">
+        <h2 class="sp-title">Shayari ❤️</h2>
+        <div class="sp-text">
+          <p>Tum chaand si haseen,</p>
+          <p>Staron si roshan lagti ho..</p>
+          <p>Masoomiyat mein bhi ek,</p>
+          <p>Ada-e-khaas lagti ho..</p>
+          <br/>
+          <p>Sheesha kya samjhe,</p>
+          <p>Tumhari khubsurti ka raaz..</p>
+          <p>Meri aankhon se pucho,</p>
+          <p class="sp-quote">"Tum kitni lajawab lagti ho."</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-cutie.gif" alt="Mochi blushing" class="sp-mochi" />
+          <p class="sp-mochi-caption">blushing for you 🥺</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" disabled aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+      <div class="sp-deco bot-deco" aria-hidden="true">❤ ✦ ❤</div>
+    </div>
+
+    <!-- Page 2 — Aankhon Mein (speechless/pleading eyes) -->
+    <div class="spage dark-page" id="sp-2">
+      <div class="sp-content">
+        <h2 class="sp-title">But in Shayari...</h2>
+        <div class="sp-text">
+          <p>Teri aankhon mein kuch aisi baat hai,</p>
+          <p>Jaise har sawaal ka wahi jawaab hai..</p>
+          <br/>
+          <p>Ek nazar padti hai toh dil ruk sa jaata hai,</p>
+          <p>Phir har lamha tera khayaal ban jaata hai..</p>
+          <br/>
+          <p>Kehne ko toh bahut kuch kehna hai tujhe,</p>
+          <p>Magar teri aankhon ke saamne..</p>
+          <p class="sp-quote">"Har lafz khamosh ho jaata hai."</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-pleading.gif" alt="Mochi thinking" class="sp-mochi" />
+          <p class="sp-mochi-caption">...speechless 🤍</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 3 — Unka Naam (phone / daydreaming) -->
+    <div class="spage light-page" id="sp-3">
+      <div class="sp-deco top-deco" aria-hidden="true">✾ ✦ ✾</div>
+      <div class="sp-content">
+        <h2 class="sp-title">But in Shayari...</h2>
+        <div class="sp-text">
+          <p>Unka naam kehte kehte,</p>
+          <p>Subah se shaam ho gyi.</p>
+          <br/>
+          <p>Unse milne ki khushi mein,</p>
+          <p>Neendein haraam ho gyi.</p>
+          <br/>
+          <p>Hum dil thaam kar chalte the</p>
+          <p>Ishq ki galiyon mein janaab,</p>
+          <br/>
+          <p>Jo dekha unhe ek nazar</p>
+          <p class="sp-quote">Ek hi zindagi thi jo ab unke naam ho gyi.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-phone.gif" alt="Mochi smiling at phone" class="sp-mochi" />
+          <p class="sp-mochi-caption">dreaming of you 🌙</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+      <div class="sp-deco bot-deco" aria-hidden="true">❀ ✧ ❀</div>
+    </div>
+
+    <!-- Page 4 — I am not a shayar (kawaii writing) -->
+    <div class="spage dark-page" id="sp-4">
+      <div class="sp-content">
+        <h2 class="sp-title">I am not a shayar but...</h2>
+        <div class="sp-text">
+          <p>Meri nigaahon mein ab bs "khwaab" tumhara hai,</p>
+          <p>"Chand" bhi dekhu to chehra tumhara hai...</p>
+          <br/>
+          <p>Itni jo likh chuka hu shayariyan tumhare liye,</p>
+          <p>Ab to kalam bhi puchti haii..</p>
+          <p class="sp-quote">Kya wo insan sachme tumhara hai?</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-kawaii.gif" alt="Mochi writing" class="sp-mochi" />
+          <p class="sp-mochi-caption">still writing for you... ✍️</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 5 — Long poem (holding glowing heart) -->
+    <div class="spage light-page poem-page" id="sp-5">
+      <div class="sp-deco top-deco" aria-hidden="true">✿ ❀ ✾ ❀ ✿</div>
+      <div class="sp-content">
+        <h2 class="sp-title">For You...</h2>
+        <div class="sp-text small-text">
+          <p>Teri aankhon ki tareef karun,</p>
+          <p>Toh sitare bhi sharmaayein,</p>
+          <p>Tu palkein jo utha de,</p>
+          <p>Toh chaand bhi nazrein jhukaayein.</p>
+          <br/>
+          <p>Tere chehre ka noor likhun,</p>
+          <p>Toh savere bhi jal jaayein,</p>
+          <p>Tu muskura de ek dafa,</p>
+          <p>Tohh mausam bhi badal jaayein.</p>
+          <br/>
+          <p>Teri zulfon ka zikr chhedun,</p>
+          <p>Toh raat bhi theher jaaye,</p>
+          <p>Hawa tujhe chhoo kar guzre,</p>
+          <p>Toh khushboo ban jaaye.</p>
+          <br/>
+          <p>Tere husn ko lafzon mein utaarun,</p>
+          <p>Toh lafz hi bikhar jaayein,</p>
+          <p>Tujh pe jitna likhta jaaun,</p>
+          <p class="sp-quote">Utna hi alfaaz kam pad jaayein.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/peach-cuddle.gif" alt="Mochi cuddling" class="sp-mochi" />
+          <p class="sp-mochi-caption">my whole heart is yours 🌸</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 6 — Sirf Tum (hearts floating) -->
+    <div class="spage dark-page" id="sp-6">
+      <div class="sp-content">
+        <h2 class="sp-title">Sirf Tum...</h2>
+        <div class="sp-text">
+          <p>Kaise dekhu mai kisi aur ko</p>
+          <p>Meri aankhon me sirf tum ho</p>
+          <br/>
+          <p>Nazre laakh haseen sahi</p>
+          <p>Magar meri nazar me</p>
+          <p class="sp-quote">Khubsurat sirf tum ho.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/peach-skip.gif" alt="Mochi skipping happily" class="sp-mochi" />
+          <p class="sp-mochi-caption">only eyes for you 💗</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 7 — Bohat Afzal (adorable mochi) -->
+    <div class="spage light-page" id="sp-7">
+      <div class="sp-deco top-deco" aria-hidden="true">✦ ✧ ✦</div>
+      <div class="sp-content">
+        <h2 class="sp-title">Bohat Afzal...</h2>
+        <div class="sp-text">
+          <p>Bohat afzal ho tum,</p>
+          <p>Tumhe nayaab likh dun</p>
+          <br/>
+          <p>Ye naazme, ghazle choro</p>
+          <p class="sp-quote">Mai tum par kitaab likh dun.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-adorable.gif" alt="Mochi adorable" class="sp-mochi" />
+          <p class="sp-mochi-caption">writing a whole book for you 📖</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+      <div class="sp-deco bot-deco" aria-hidden="true">❤ ✦ ❤</div>
+    </div>
+
+    <!-- Page 8 — Lafzo Ki Talash (peach cat cuddle) -->
+    <div class="spage dark-page" id="sp-8">
+      <div class="sp-content">
+        <h2 class="sp-title">But in Shayari...</h2>
+        <div class="sp-text">
+          <p>Lafzo ki talash me yaha ehsas likha jata hai,</p>
+          <p>Yaha Pani ko bhi payas likha jata hai..</p>
+          <br/>
+          <p>Aur mere zazbat se waqif hai meri kalam,</p>
+          <p class="sp-quote">Mai ishq likhu aur tera naam likha jata hai.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-peach-cuddle.gif" alt="Mochi hugging" class="sp-mochi" />
+          <p class="sp-mochi-caption">your name in every heartbeat 🤍</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 9 — Bhool Jata Hoon (sweet couple) -->
+    <div class="spage light-page" id="sp-9">
+      <div class="sp-deco top-deco" aria-hidden="true">✿ ✦ ✿</div>
+      <div class="sp-content">
+        <h2 class="sp-title">Bhool Jaata Hoon...</h2>
+        <div class="sp-text">
+          <p>Kabhi lafz bhul jau,</p>
+          <p>Kabhi baat bhul jau!!</p>
+          <br/>
+          <p>Tujhe us kadar chahu,</p>
+          <p>Ki apni zaat bhul jau,</p>
+          <br/>
+          <p>Kaise kahe tumhe kitna chaha hai tumhe</p>
+          <p>Agar kehne pe aau</p>
+          <p class="sp-quote">Toh alfaaz bhul jau..</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-sweet.gif" alt="Mochi sweet" class="sp-mochi" />
+          <p class="sp-mochi-caption">forgot everything except you 🥺</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 10 — Har Janam (holding heart) -->
+    <div class="spage dark-page" id="sp-10">
+      <div class="sp-content">
+        <h2 class="sp-title">Har Janam...</h2>
+        <div class="sp-text">
+          <p>Mujhe tera saath kisi ek shaam tak nahi chahiye,</p>
+          <p>Mujhe tera haath sirf ek naam tak nahi chahiye,</p>
+          <br/>
+          <p>Jab tak saans chale,</p>
+          <p>Bas tu mere paas rahe,</p>
+          <br/>
+          <p>Mujhe tu aaj nahi...</p>
+          <p class="sp-quote">Har janam chahiye.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/peach-celebrate.gif" alt="Mochi celebrating" class="sp-mochi" />
+          <p class="sp-mochi-caption">every lifetime with you 💌</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 11 — Aankhon Ka Noor (pleading puppy eyes) -->
+    <div class="spage light-page" id="sp-11">
+      <div class="sp-deco top-deco" aria-hidden="true">❀ ✧ ❀</div>
+      <div class="sp-content">
+        <h2 class="sp-title">Aankhon Ka Noor...</h2>
+        <div class="sp-text">
+          <p>Ye jo teri aankhon ka noor hai,</p>
+          <p>Iske aage sab fizool hai.</p>
+          <br/>
+          <p>Teri khoobsurati ka kya kehna,</p>
+          <p>Teri to sadgi bhi mashhoor hai.</p>
+          <br/>
+          <p>Keh bhi do jaana..</p>
+          <p class="sp-quote">Kya ye ishq tumhe kubool hai?</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-pleading.gif" alt="Mochi pleading" class="sp-mochi" />
+          <p class="sp-mochi-caption">nervous... waiting for your answer 🥺</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 12 — Har Din (happy dance) -->
+    <div class="spage dark-page" id="sp-12">
+      <div class="sp-content">
+        <h2 class="sp-title">Har Din...</h2>
+        <div class="sp-text">
+          <p>Har din tu thodi aur pasand aati hai,</p>
+          <p>Har baat teri dil ko chhoo jaati hai...</p>
+          <br/>
+          <p>Pata nahi ise mohabbat kahun ya kuch aur,</p>
+          <p>Par teri ek muskurahat,</p>
+          <p class="sp-quote">Mera din zaroor bana jaati hai...</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-dance.gif" alt="Mochi dancing" class="sp-mochi" />
+          <p class="sp-mochi-caption">your smile makes my whole day ☀️</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 13 — Mere Ishq Ko (cat dancing) -->
+    <div class="spage light-page" id="sp-13">
+      <div class="sp-deco top-deco" aria-hidden="true">✦ ✧ ✦ ✧ ✦</div>
+      <div class="sp-content">
+        <h2 class="sp-title">Mere Ishq Ko...</h2>
+        <div class="sp-text">
+          <p>Mere ishq ko tum kya hi azmaoge,</p>
+          <p>Meri jaan se jada tum kya hi maang paoge.</p>
+          <br/>
+          <p>Aur kaise yakeen karau tumhe apni mohobbat ka,</p>
+          <p>Meri mohobbat to sitaaro jesi hai.</p>
+          <p class="sp-quote">Kya tum sitaare gin paaogi??</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/peach-dance.gif" alt="Mochi dancing" class="sp-mochi" />
+          <p class="sp-mochi-caption">count the stars... 🌟</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+      <div class="sp-deco bot-deco" aria-hidden="true">✧ ✦ ✧</div>
+    </div>
+
+    <!-- Page 14 — Bayaan Kaise Karun (hearts) -->
+    <div class="spage dark-page" id="sp-14">
+      <div class="sp-content">
+        <h2 class="sp-title">Bayaan Kaise Karun...</h2>
+        <div class="sp-text">
+          <p>Mohabbat ko lafzon mein bayaan kaise karun,</p>
+          <p>Tujhe chahun kitna, ye bayaan kaise karun.</p>
+          <br/>
+          <p>Meri har dhadkan tera naam leti hai,</p>
+          <p class="sp-quote">Ab isse zyada tujhe apna bayaan kaise karun.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/peach-excited.gif" alt="Mochi excited" class="sp-mochi" />
+          <p class="sp-mochi-caption">no words left... only feelings 💗</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 15 — Samandar / Stars (Mohtarma) -->
+    <div class="spage light-page" id="sp-15">
+      <div class="sp-deco top-deco" aria-hidden="true">🌊 ✦ 🌟</div>
+      <div class="sp-content">
+        <h2 class="sp-title">Mohtarma...</h2>
+        <div class="sp-text">
+          <p>Bolti ho na ap pyar nhi krte....</p>
+          <br/>
+          <p>Ja kar samandar ke kinare pani utha lena,</p>
+          <p>Jitna utha sako wo chahat Tumhari,</p>
+          <p>Or jo nah utha pao wo Mohabbat hamari.</p>
+          <br/>
+          <p>Or raato ko dekh asman me tare gin Lena,</p>
+          <p>Jitna gin sako wo chahat tumhari,</p>
+          <p class="sp-quote">Or jo nah gin pao wo Mohabbat hamari.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-peach-cuddle.gif" alt="Mochi hug" class="sp-mochi" />
+          <p class="sp-mochi-caption">oceans and stars for you 🌊🌟</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 16 — Ek Nazar Mein (became my world) -->
+    <div class="spage dark-page" id="sp-16">
+      <div class="sp-content">
+        <h2 class="sp-title">Ek Nazar Mein...</h2>
+        <div class="sp-text">
+          <p>Ek he nazar me ap humare mehman ban gye,</p>
+          <p>Do baate kya kar le,</p>
+          <p>Ap to sara jahan ban gye.</p>
+          <br/>
+          <p>Pas rah kar bhi mujhe apna nah bna saka,</p>
+          <p class="sp-quote">Ap to dur rehkar bhi humari Jan bn gye.</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/peach-cuddle.gif" alt="Mochi cuddle" class="sp-mochi" />
+          <p class="sp-mochi-caption">you became my whole world 🌍</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn" aria-label="Next page">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 17 — Teri Aankhon (journey continues) -->
+    <div class="spage light-page" id="sp-17">
+      <div class="sp-deco top-deco" aria-hidden="true">✿ ❤ ✿</div>
+      <div class="sp-content">
+        <h2 class="sp-title">Har Lafz Khamosh...</h2>
+        <div class="sp-text">
+          <p>Teri aankhon mein kuch aisi baat hai,</p>
+          <p>Jaise har sawaal ka wahi jawaab hai..</p>
+          <br/>
+          <p>Ek nazar padti hai toh dil ruk sa jaata hai,</p>
+          <p>Phir har lamha tera khayaal ban jaata hai.</p>
+          <br/>
+          <p>Kehne ko toh bahut kuch kehna hai tujhe,</p>
+          <p>Magar teri aankhon ke saamne..</p>
+          <p class="sp-quote">"Har lafz khamosh ho jaata hai.!!"</p>
+        </div>
+        <div class="sp-mochi-wrap">
+          <img src="assets/mochi/mochi-kawaii.gif" alt="Mochi cute" class="sp-mochi" />
+          <p class="sp-mochi-caption">and still... I keep falling 🌸</p>
+        </div>
+        <div class="page-nav">
+          <button class="nav-btn back-btn" aria-label="Previous page">← Back</button>
+          <button class="nav-btn next-btn finish-btn" aria-label="Final message">For You ❤️ →</button>
+        </div>
+      </div>
+      <div class="sp-deco bot-deco" aria-hidden="true">❤ ✦ ❤</div>
+    </div>
+
+  </div><!-- end pages-wrapper -->
+
+  <!-- ===================== FINAL PAGE ===================== -->
+  <div id="page-final" class="page final-page hidden">
+    <div class="final-stars" aria-hidden="true">
+      <span class="fs f1">✦</span><span class="fs f2">✧</span>
+      <span class="fs f3">✦</span><span class="fs f4">✧</span>
+      <span class="fs f5">✦</span><span class="fs f6">✧</span>
+      <span class="fs f7">✦</span><span class="fs f8">✧</span>
+    </div>
+    <div class="final-inner">
+      <div class="final-mochi-row" id="final-mochis">
+        <img src="assets/mochi/mochi-peach-cuddle.gif" alt="Mochi hugging" class="final-mochi-img" />
+        <img src="assets/mochi/peach-celebrate.gif" alt="Mochi celebrating" class="final-mochi-img" />
+        <img src="assets/mochi/peach-excited.gif" alt="Mochi love" class="final-mochi-img" />
+      </div>
+      <div class="final-lines">
+        <p class="fl fl-1">So...</p>
+        <p class="fl fl-2">You've reached the end.</p>
+        <p class="fl fl-3">But I don't think I've said enough.</p>
+        <div class="fl fl-4 final-divider">· · ✦ · ·</div>
+        <p class="fl fl-5">Thank you.</p>
+        <p class="fl fl-6">For every smile. For every conversation.</p>
+        <p class="fl fl-7">For every little thing you do.</p>
+        <p class="fl fl-8">For simply being you.</p>
+        <div class="fl fl-9 final-divider">· · ✦ · ·</div>
+        <p class="fl fl-10">I don't know what the future will look like...</p>
+        <p class="fl fl-11">But I know I want you in it.</p>
+        <div class="fl fl-12 final-divider">· · ✦ · ·</div>
+        <p class="fl fl-13 big-love">I LOVE YOU ❤️</p>
+        <p class="fl fl-14 love-sub">Stay with me, always. 🥺</p>
+      </div>
+      <div class="final-bottom-mochis">
+        <img src="assets/mochi/mochi-dance.gif" alt="Mochi dancing" class="final-mochi-sm" />
+        <img src="assets/mochi/peach-dance.gif" alt="Mochi dancing" class="final-mochi-sm" />
+        <img src="assets/mochi/peach-skip.gif" alt="Mochi skipping" class="final-mochi-sm" />
+        <img src="assets/mochi/mochi-wave.gif" alt="Mochi waving" class="final-mochi-sm" />
+      </div>
+      <button class="restart-btn" id="restart-btn">Start over 🔄</button>
+    </div>
+    <div id="final-hearts" class="final-hearts" aria-hidden="true"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
